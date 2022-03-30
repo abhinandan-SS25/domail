@@ -2,7 +2,7 @@
   "name": "domail",
   "version": "0.1.0",
   "private": true,
-  "homepage":"/",
+  "homepage":"https://abhinandan-ss25.github.io/domail/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.2",
