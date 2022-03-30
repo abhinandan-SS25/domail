@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/domail/static/css/main.b6d5f37e.chunk.css",
-    "main.js": "/domail/static/js/main.0d144b44.chunk.js",
-    "main.js.map": "/domail/static/js/main.0d144b44.chunk.js.map",
+    "main.js": "/domail/static/js/main.deafbb54.chunk.js",
+    "main.js.map": "/domail/static/js/main.deafbb54.chunk.js.map",
     "runtime-main.js": "/domail/static/js/runtime-main.3fd2f9d6.js",
     "runtime-main.js.map": "/domail/static/js/runtime-main.3fd2f9d6.js.map",
     "static/js/2.a59cd35a.chunk.js": "/domail/static/js/2.a59cd35a.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.3fd2f9d6.js",
     "static/js/2.a59cd35a.chunk.js",
     "static/css/main.b6d5f37e.chunk.css",
-    "static/js/main.0d144b44.chunk.js"
+    "static/js/main.deafbb54.chunk.js"
   ]
 }
