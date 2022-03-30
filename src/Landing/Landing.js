@@ -10,7 +10,7 @@ const Landing = () => {
     return(
         <div id='landing'>
             <Routes>
-                <Route path="/" element={<Login />} exact />
+                <Route path="/domail/" element={<Login />} exact />
                 <Route path="/register" element={<Register />} exact />
                 <Route path="/emails/inbox" element={<MailBox />} exact />
             </Routes>
