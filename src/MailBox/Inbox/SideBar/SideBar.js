@@ -33,7 +33,7 @@ const SideBar = ({contacted, groups, profile, Contacts, raiseCompose, user}) => 
     let n = useNavigate()
 
     function navigate() {
-        nav && n("/")
+        nav && n("/domail/")
     }
 
     const [, forceUpdate] = React.useReducer(x => x + 1, 0);

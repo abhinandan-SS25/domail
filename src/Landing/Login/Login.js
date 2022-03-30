@@ -44,7 +44,7 @@ const Login = () => {
                     {view}
                 </div>
             </div>
-            <Link to="/register"><Travel text="Register for a new account" /></Link>
+            <Link to="/domail/register"><Travel text="Register for a new account" /></Link>
         </div>
     )
 }

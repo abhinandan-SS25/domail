@@ -52,7 +52,7 @@ const EnterForm = (props) => {
     let n = useNavigate()
 
     function navigate() {
-        nav && n("/emails/inbox", {state:{username:enterData.email, mailbox:"inbox", password:enterData.password, f_n:"to", l_n:"@Domail"}})
+        nav && n("/domail/emails/inbox", {state:{username:enterData.email, mailbox:"inbox", password:enterData.password, f_n:"to", l_n:"@Domail"}})
     }
 
     function handleEnterData (event) {

@@ -62,7 +62,7 @@ const LoginForm = () => {
     let n = useNavigate()
 
     function navigate () {
-        nav && n("/emails/inbox", {state:{username:loginData.email.split("@")[1]===undefined?loginData.email+"@domial.com":loginData.email, mailbox:"inbox", password:loginData.password, f_n:"to", l_n:"@Domail"}})
+        nav && n("/domail/emails/inbox", {state:{username:loginData.email.split("@")[1]===undefined?loginData.email+"@domial.com":loginData.email, mailbox:"inbox", password:loginData.password, f_n:"to", l_n:"@Domail"}})
     }
 
     return (

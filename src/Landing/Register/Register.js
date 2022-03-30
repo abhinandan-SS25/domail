@@ -28,7 +28,7 @@ const Register = () => {
                     <RegisterForm />
                 </div>
             </div>
-            <Link to="/"><Travel text="Login to your account" /></Link>
+            <Link to="/domail/"><Travel text="Login to your account" /></Link>
         </div>
     )
 }

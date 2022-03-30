@@ -11,8 +11,8 @@ const Landing = () => {
         <div id='landing'>
             <Routes>
                 <Route path="/domail/" element={<Login />} exact />
-                <Route path="/register" element={<Register />} exact />
-                <Route path="/emails/inbox" element={<MailBox />} exact />
+                <Route path="/domail/register" element={<Register />} exact />
+                <Route path="/domail/emails/inbox" element={<MailBox />} exact />
             </Routes>
         </div>
     )

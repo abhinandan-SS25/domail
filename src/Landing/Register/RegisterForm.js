@@ -81,7 +81,7 @@ const RegisterForm = () => {
         let n = useNavigate()
 
         function navigate () {
-            nav && n("/")
+            nav && n("/domail/")
         }
     
     return (
