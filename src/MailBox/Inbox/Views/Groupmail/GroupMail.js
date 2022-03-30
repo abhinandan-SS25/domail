@@ -60,7 +60,7 @@ const GroupMail = (props) => {
     },[])
 
     const network_accounts = group_accounts.map(account=>{
-        const is_user = account.email===props.user.username?true:false
+        const is_user = account.email.split("@")[0]===props.user.username.split("@")[0]?true:false
         return !is_user && <div onClick={add_name} data-name={account.email} className="group_account">
             <div data-name={account.email} className="group_account_name">
                 {account.firstname} {account.lastname}

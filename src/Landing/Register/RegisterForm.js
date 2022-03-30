@@ -59,15 +59,13 @@ const RegisterForm = () => {
                         event.preventDefault()
                     }
                     else if (response==="Register successful") {
-                        setError("Successfuly signed up").then(
-                            localStorage.setItem("domail_user", JSON.stringify({
+                        setError("Successfuly signed up")
+                        localStorage.setItem("domail_user", JSON.stringify({
                                 firstname:registerData.firstname,
                                 lastname:registerData.lastname,
                                 email:registerData.email
                             }))
-                        ).then(
-                            setNav((prev) => !prev)
-                            ).then(navigate)
+                        navigate()
                     }
                     else{
                         setError("Please try a different email username")

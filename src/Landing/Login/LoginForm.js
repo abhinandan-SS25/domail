@@ -15,7 +15,8 @@ const LoginForm = () => {
     })
 
     function submitLoginForm (event) {
-        setStatus((prev)=> !prev)
+        setError("Logging in...")
+        setStatus((prev) => !prev)
         event.preventDefault()
 
         if ((loginData.password==="") || (loginData.email==="")) {
