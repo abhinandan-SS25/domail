@@ -6,9 +6,9 @@ import Compose from "../Compose/Compose";
 
 const Inbox = (props) => {
 
-    const [view, setView] = React.useState(<AllMail user={props.user} />)
     const [view_name, setView_name] = React.useState("AllMail")
-    
+    const [view, setView] = React.useState(<AllMail user={props.user} view_name={view_name} setView_name={setView_name} />)
+
     return (
         <div id="inbox">
             {props.composeVisible.visible && <Compose user={props.user} raiseCompose={props.setComposeVisible} preBody={props.composeVisible.preBody} preSubject={props.composeVisible.preSubject} preRecipients={props.composeVisible.preRecipients} preImportant={props.composeVisible.preImportant} nosave={props.composeVisible.nosave} nosavename={props.composeVisible.nosavename}/>}
