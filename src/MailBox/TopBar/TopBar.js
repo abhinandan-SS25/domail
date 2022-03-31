@@ -60,49 +60,49 @@ const TopBar = (props) => {
             </div>
             <div id="navigation_icons">
 
-                <div onClick={()=>props.changeview(<AllMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>)} className="navigate_icon" id="all_mail">
+                <div onClick={()=>props.changeview(<AllMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>)} className="navigate_icon" id="all_mail">
                     <div className={props.view_name==="AllMail"?"active_icon":"icon"}>
                         <AiTwotoneMail />
                         <div className="icon_puropse">All Mails</div>
                     </div>
                 </div>
 
-                <div onClick={()=>props.changeview(<ImportantMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="important_mail">
+                <div onClick={()=>props.changeview(<ImportantMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="important_mail">
                     <div className={props.view_name==="ImportantMail"?"active_icon":"icon"}>
                         <MdLabelImportantOutline />
                         <div className="icon_puropse">Important</div>
                     </div>
                 </div>
 
-                <div onClick={()=>props.changeview(<InboxMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="inbox_mail">
+                <div onClick={()=>props.changeview(<InboxMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="inbox_mail">
                     <div   className={props.view_name==="Inboxmail"?"active_icon":"icon"}>
                         <IoMailOutline />
                         <div className="icon_puropse">Inbox</div>
                     </div>
                 </div>
             
-                <div onClick={()=>props.changeview(<SentMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="sent_mail">
+                <div onClick={()=>props.changeview(<SentMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="sent_mail">
                     <div className={props.view_name==="SentMail"?"active_icon":"icon"}>
                         <HiOutlineChevronDoubleRight />
                         <div className="icon_puropse">Sent</div>
                     </div>
                 </div>
            
-                <div onClick={()=>props.changeview(<ArchivedMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="archived_mail">
+                <div onClick={()=>props.changeview(<ArchivedMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user} />)} className="navigate_icon" id="archived_mail">
                     <div className={props.view_name==="ArchivedMail"?"active_icon":"icon"}>
                         <IoArchiveOutline />
                         <div className="icon_puropse">Archived</div>
                     </div>
                 </div>
             
-                <div onClick={()=>props.changeview(<NetworkMail setView_Name={props.setView_Name} raiseCompose={props.raiseCompose} />)} className="navigate_icon" id="network_mail">
+                <div onClick={()=>props.changeview(<NetworkMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} />)} className="navigate_icon" id="network_mail">
                     <div className={props.view_name==="NetworkMail"?"active_icon":"icon"}>
                         <MdOutlineConnectWithoutContact />
                         <div className="icon_puropse">Network</div>
                     </div>
                 </div>
             
-                <div onClick={()=>props.changeview(<GroupMail setView_Name={props.setView_Name} user={props.user} />)} className="navigate_icon" id="groups_mail">
+                <div onClick={()=>props.changeview(<GroupMail setView_name={props.setView_name} user={props.user} />)} className="navigate_icon" id="groups_mail">
                     <div className={props.view_name==="GroupMail"?"active_icon":"icon"}>
                         <MdOutlineGroups />
                         <div className="icon_puropse">Groups</div>
