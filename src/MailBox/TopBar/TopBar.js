@@ -38,6 +38,8 @@ const TopBar = (props) => {
         setDraftVisible(prev=>!prev)
     }
 
+    console.log(props.view)
+
     return (
         <div id="topbar">
             {draftVisible && <Drafts user={props.user} raiseCompose={props.raiseCompose} />}
