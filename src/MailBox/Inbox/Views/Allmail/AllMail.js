@@ -9,6 +9,7 @@ const AllMail = (props) => {
     const [archivedEmail, setArchivedEmails] = React.useState([])
 
     React.useEffect( () => {
+        props.setView_name("AllMail")
         fetch("https://mailmanapi.herokuapp.com/emails/important", {
             method:"POST",
             body: JSON.stringify({

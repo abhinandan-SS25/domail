@@ -52,6 +52,7 @@ const GroupMail = (props) => {
     React.useEffect( update_groups,[])
 
     React.useEffect(()=>{
+        props.setView_name("GroupMail")
         fetch("https://mailmanapi.herokuapp.com/accounts").then(
             response=>response.json()
         ).then (

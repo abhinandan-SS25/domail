@@ -6,6 +6,7 @@ const NetworkMail = (props) => {
     const [accounts, setAccounts] = React.useState([])
 
     React.useEffect(()=>{
+        props.setView_name("NetworkMail")
         fetch("https://mailmanapi.herokuapp.com/accounts").then(
             response=>response.json()
         ).then (

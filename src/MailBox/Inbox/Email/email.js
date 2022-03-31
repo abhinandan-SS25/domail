@@ -42,7 +42,7 @@ const Email = (props) => {
             <div className="mail">
                 <div className="top_navigation">
                     <div onClick={()=>props.changeview(props.back)} className="back">
-                        <BiArrowBack size="36"/> Back to {props.back.type.name}
+                        <BiArrowBack size="36"/> Back
                     </div>
                     <div className="actions">
                         <span onClick={changeArchiveState} id="archive_action">{archiveState?"Unarchive Mail":"Archive Mail"}</span>
