@@ -7,7 +7,9 @@ const SentMail = (props) => {
     const [emails, setEmails] = React.useState([])
 
     React.useEffect( () => {
-        props.setView_name("SentMail")
+        try{
+            props.setView_name("SentMail")}
+        catch{}
         fetch("https://mailmanapi.herokuapp.com/emails/sent", {
             method:"POST",
             body: JSON.stringify({

@@ -9,7 +9,9 @@ const AllMail = (props) => {
     const [archivedEmail, setArchivedEmails] = React.useState([])
 
     React.useEffect( () => {
-        props.setView_name("AllMail")
+        try{
+            props.setView_name("AllMail")}
+        catch{}
         fetch("https://mailmanapi.herokuapp.com/emails/important", {
             method:"POST",
             body: JSON.stringify({
@@ -47,7 +49,7 @@ const AllMail = (props) => {
 
     const important_email_list = importantEmail.map(email=>{
         return (
-            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} email={email} changeview={props.changeview} back={<AllMail raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white", borderColor:"yellow"}} id={email.id} className="email_rep">
+            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} setView_name={props.setView_name} email={email} changeview={props.changeview} back={<AllMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white", borderColor:"yellow"}} id={email.id} className="email_rep">
                 <div className="email_info_rep">
                     <div className="email_sender_rep">
                         {email.sender}
@@ -71,7 +73,7 @@ const AllMail = (props) => {
 
     const inbox_email_list = inboxEmail.map(email=>{
         return (
-            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} email={email} changeview={props.changeview} back={<AllMail raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white"}} id={email.id} className="email_rep">
+            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} setView_name={props.setView_name} email={email} changeview={props.changeview} back={<AllMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white"}} id={email.id} className="email_rep">
                 <div className="email_info_rep">
                     <div className="email_sender_rep">
                         {email.sender}
@@ -95,7 +97,7 @@ const AllMail = (props) => {
 
     const archived_email_list = archivedEmail.map(email=>{
         return (
-            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} email={email} changeview={props.changeview} back={<AllMail raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white", borderColor:"green"}} id={email.id} className="email_rep">
+            <div onClick={()=>props.changeview(<Email raiseCompose={props.raiseCompose} setView_name={props.setView_name} email={email} changeview={props.changeview} back={<AllMail setView_name={props.setView_name} raiseCompose={props.raiseCompose} changeview={props.changeview} user={props.user}/>} />)} style={{backgroundColor:email.read?"#dedede":"white", borderColor:"green"}} id={email.id} className="email_rep">
                 <div className="email_info_rep">
                     <div className="email_sender_rep">
                         {email.sender}

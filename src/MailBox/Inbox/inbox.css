@@ -14,11 +14,11 @@
 
 #welcome {
     display:flex;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     z-index:2;
-    height:100vh;
+    min-height:100vh;
     width:100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
@@ -30,7 +30,6 @@
     justify-content: center;
     animation: greet 5s 1;
     color:black;
-    overflow: hidden;
 }
 
 #welcome #n_span {

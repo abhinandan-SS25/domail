@@ -7,7 +7,9 @@ const Inboxmail = (props) => {
     const [emails, setEmails] = React.useState([])
 
     React.useEffect( () => {
-        props.setView_name("Inboxmail")
+        try{
+            props.setView_name("Inboxmail")}
+            catch{}
             fetch("https://mailmanapi.herokuapp.com/emails/inbox", {
             method:"POST",
             body: JSON.stringify({

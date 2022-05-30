@@ -7,7 +7,9 @@ const ImportantMail = (props) => {
     const [emails, setEmails] = React.useState([])
 
     React.useEffect( () => {
-        props.setView_name("ImportantMail")
+        try{
+            props.setView_name("ImportantMail")}
+        catch{}
         fetch("https://mailmanapi.herokuapp.com/emails/important", {
             method:"POST",
             body: JSON.stringify({

@@ -110,6 +110,14 @@
     border-style: solid hidden solid hidden;
 }
 
+.email_rep:hover {
+    cursor: pointer;
+    border: 2px solid #c6c6c6;
+    border-color: #c6c6c6;
+    background-color: aliceblue;
+    transform: scale(1.0005);
+}
+
 .email_info_rep, .email_info_2_rep {
     height:4vh;
     width:100%;
@@ -125,6 +133,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    word-break: break-all;
 }
 
 .email_sent_date_rep {
@@ -189,7 +198,7 @@
 }
 
 #left_mail, #right_mail {
-    width:50%;
+    width:49%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
