@@ -10,7 +10,7 @@ const SentMail = (props) => {
         try{
             props.setView_name("SentMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/emails/sent", {
+        fetch("https://127.0.0.1:8000/emails/sent", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,

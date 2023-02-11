@@ -24,7 +24,7 @@ const EnterForm = (props) => {
             event.preventDefault()
             setStatus((prev)=> !prev)
         } else {
-            fetch("https://mailmanapi.herokuapp.com/login", {
+            fetch("https://127.0.0.1:8000/login", {
                 method: "POST",
                 body: JSON.stringify({
                     email:enterData.email,

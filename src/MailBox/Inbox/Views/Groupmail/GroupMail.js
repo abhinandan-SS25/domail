@@ -55,7 +55,7 @@ const GroupMail = (props) => {
         try{
             props.setView_name("GroupMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/accounts").then(
+        fetch("https://127.0.0.1:8000/accounts").then(
             response=>response.json()
         ).then (
             response=>setAccounts(response)
@@ -90,7 +90,7 @@ const GroupMail = (props) => {
         } )
     }
     function delete_group(event) {
-        fetch("https://mailmanapi.herokuapp.com/account/your_groups", {
+        fetch("https://127.0.0.1:8000/account/your_groups", {
             method: "POST",
         body: JSON.stringify(
             {
@@ -105,7 +105,7 @@ const GroupMail = (props) => {
     }
 
     function update_groups() {
-        fetch("https://mailmanapi.herokuapp.com/account/your_groups", {
+        fetch("https://127.0.0.1:8000/account/your_groups", {
             method: "POST",
         body: JSON.stringify(
             {
@@ -144,7 +144,7 @@ const GroupMail = (props) => {
         }
         else {
             setDis(prev=>!prev)
-            fetch("https://mailmanapi.herokuapp.com/account/your_groups", {
+            fetch("https://127.0.0.1:8000/account/your_groups", {
             method: "POST",
             body: JSON.stringify(
                 {

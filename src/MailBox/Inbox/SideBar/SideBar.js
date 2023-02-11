@@ -8,7 +8,7 @@ const SideBar = ({contacted, groups, profile, Contacts, raiseCompose, user}) => 
     const [nav, setNav] = React.useState(true)
 
     function logout_user () {
-        fetch("https://mailmanapi.herokuapp.com/logout").then(
+        fetch("https://127.0.0.1:8000/logout").then(
             response => response.text()
         ).then(response => {
             if (response==="Logout successful") {

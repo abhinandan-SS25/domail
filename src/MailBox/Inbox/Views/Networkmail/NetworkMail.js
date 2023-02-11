@@ -9,7 +9,7 @@ const NetworkMail = (props) => {
         try{
             props.setView_name("NetworkMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/accounts").then(
+        fetch("https://127.0.0.1:8000/accounts").then(
             response=>response.json()
         ).then (
             response=>setAccounts(response)

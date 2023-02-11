@@ -10,7 +10,7 @@ const ImportantMail = (props) => {
         try{
             props.setView_name("ImportantMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/emails/important", {
+        fetch("https://127.0.0.1:8000/emails/important", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,

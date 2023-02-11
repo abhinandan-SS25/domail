@@ -29,7 +29,7 @@ const MailBox = () => {
 
     const [sesuser, setSesuser] = React.useState([])
 
-    React.useEffect( () => {fetch("https://mailmanapi.herokuapp.com/accounts", {
+    React.useEffect( () => {fetch("https://127.0.0.1:8000/accounts", {
             method:"POST",
             body:JSON.stringify({
                 username:location.state.username
@@ -60,7 +60,7 @@ const MailBox = () => {
     const [accounts, setAccounts] = React.useState([])
 
     React.useEffect( () => {
-        fetch("https://mailmanapi.herokuapp.com/account/contacted", {
+        fetch("https://127.0.0.1:8000/account/contacted", {
         method: "POST",
         body: JSON.stringify(
             {
@@ -82,7 +82,7 @@ const MailBox = () => {
     const [groups, setGroups] = React.useState([])
 
     React.useEffect( () => {
-        fetch("https://mailmanapi.herokuapp.com/account/your_groups", {
+        fetch("https://127.0.0.1:8000/account/your_groups", {
             method: "POST",
         body: JSON.stringify(
             {

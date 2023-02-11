@@ -36,7 +36,7 @@ const RegisterForm = () => {
             event.preventDefault()
             setStatus((prev)=> !prev)
         } else {
-            fetch("https://mailmanapi.herokuapp.com/register", {
+            fetch("https://127.0.0.1:8000/register", {
                 method: "POST",
                 body: JSON.stringify(
                     {

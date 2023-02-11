@@ -11,7 +11,7 @@ const ArchivedMail = (props) => {
         try{
             props.setView_name("ArchivedMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/emails/archive", {
+        fetch("https://127.0.0.1:8000/emails/archive", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,

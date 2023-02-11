@@ -12,7 +12,7 @@ const AllMail = (props) => {
         try{
             props.setView_name("AllMail")}
         catch{}
-        fetch("https://mailmanapi.herokuapp.com/emails/important", {
+        fetch("https://127.0.0.1:8000/emails/important", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,
@@ -24,7 +24,7 @@ const AllMail = (props) => {
     }, [])
 
     React.useEffect( () => {
-        fetch("https://mailmanapi.herokuapp.com/emails/inbox", {
+        fetch("https://127.0.0.1:8000/emails/inbox", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,
@@ -36,7 +36,7 @@ const AllMail = (props) => {
     }, [])
 
     React.useEffect( () => {
-        fetch("https://mailmanapi.herokuapp.com/emails/archive", {
+        fetch("https://127.0.0.1:8000/emails/archive", {
             method:"POST",
             body: JSON.stringify({
                 email:props.user.username,
