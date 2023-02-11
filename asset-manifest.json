@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/domail/static/css/main.dda8fb02.chunk.css",
-    "main.js": "/domail/static/js/main.5d2e634b.chunk.js",
-    "main.js.map": "/domail/static/js/main.5d2e634b.chunk.js.map",
+    "main.js": "/domail/static/js/main.94050432.chunk.js",
+    "main.js.map": "/domail/static/js/main.94050432.chunk.js.map",
     "runtime-main.js": "/domail/static/js/runtime-main.3fd2f9d6.js",
     "runtime-main.js.map": "/domail/static/js/runtime-main.3fd2f9d6.js.map",
-    "static/js/2.93eacd48.chunk.js": "/domail/static/js/2.93eacd48.chunk.js",
-    "static/js/2.93eacd48.chunk.js.map": "/domail/static/js/2.93eacd48.chunk.js.map",
+    "static/js/2.82d399c7.chunk.js": "/domail/static/js/2.82d399c7.chunk.js",
+    "static/js/2.82d399c7.chunk.js.map": "/domail/static/js/2.82d399c7.chunk.js.map",
     "index.html": "/domail/index.html",
     "static/css/main.dda8fb02.chunk.css.map": "/domail/static/css/main.dda8fb02.chunk.css.map",
-    "static/js/2.93eacd48.chunk.js.LICENSE.txt": "/domail/static/js/2.93eacd48.chunk.js.LICENSE.txt",
+    "static/js/2.82d399c7.chunk.js.LICENSE.txt": "/domail/static/js/2.82d399c7.chunk.js.LICENSE.txt",
     "static/media/auth.css": "/domail/static/media/back_black.7e9806e1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3fd2f9d6.js",
-    "static/js/2.93eacd48.chunk.js",
+    "static/js/2.82d399c7.chunk.js",
     "static/css/main.dda8fb02.chunk.css",
-    "static/js/main.5d2e634b.chunk.js"
+    "static/js/main.94050432.chunk.js"
   ]
 }
