@@ -67,7 +67,7 @@ const Compose =({raiseCompose,preBody, preSubject, preImportant, preRecipients, 
         }else{
             setn_s(true)
             setMessage({view_m:true, message:"Sending Mail"})
-            fetch('https://mailmanapi.herokuapp.com/emails', {
+            fetch('https://127.0.0.1:8000/emails', {
             method: 'POST',
             body: JSON.stringify({
             email:user.username,

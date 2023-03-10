@@ -4,7 +4,7 @@ import {BiArrowBack} from "react-icons/bi"
 
 const Email = (props) => {
 
-    fetch(`https://mailmanapi.herokuapp.com/emails/${props.email.id}`, {
+    fetch(`https://127.0.0.1:8000/emails/${props.email.id}`, {
         method: 'POST',
         body: JSON.stringify({
             read: true,
@@ -16,7 +16,7 @@ const Email = (props) => {
     const [archiveState, setArchiveState] = React.useState(props.email.archived)
 
     function changeArchiveState() {
-        fetch(`https://mailmanapi.herokuapp.com/emails/${props.email.id}`, {
+        fetch(`https://127.0.0.1:8000/emails/${props.email.id}`, {
             method: 'POST',
             body: JSON.stringify({
                 archived: archiveState?false:true,
